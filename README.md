@@ -4,22 +4,22 @@
 
 ## Fitur Utama
 
-1. **Login dan Registrasi**
+### 1. **Login dan Registrasi**
    - Pengguna dapat **login** menggunakan akun yang terdaftar atau melakukan **registrasi** untuk membuat akun baru.
    - Terdapat dua jenis akun: **Pengguna** (penyewa lapangan) dan **Admin** (pemilik lapangan yang mengelola lapangan).
 
-2. **Dashboard Pengguna**
+### 2. **Dashboard Pengguna**
    - Pengguna dapat memilih **jenis lapangan** yang tersedia (futsal, badminton, tenis).
    - Melakukan **pemeriksaan ketersediaan lapangan** berdasarkan waktu dan tanggal.
    - Melakukan **reservasi lapangan** dan **pembayaran online** untuk konfirmasi pemesanan.
    - Mendapatkan **notifikasi otomatis** jika pemesanan berhasil atau ada perubahan jadwal.
 
-3. **Dashboard Admin**
+### 3. **Dashboard Admin**
    - Admin dapat **mengelola jadwal lapangan**, menambah atau mengubah lapangan yang tersedia.
    - Admin dapat **melihat reservasi yang masuk**, serta **mengonfirmasi atau menolak pemesanan**.
    - Admin juga dapat melihat **laporan transaksi** terkait pemesanan lapangan.
 
-4. **Backup Database**
+### 4. **Backup Database**
    - Sistem melakukan **backup database otomatis** secara berkala, termasuk data pemesanan, transaksi, dan review lapangan.
    - **Script backup otomatis** menggunakan timestamp untuk menyimpan file backup dengan nama yang berbeda setiap kali.
 
@@ -39,23 +39,18 @@
 
 ## Instalasi
 
-1. **Clone Repository**
+### 1. **Clone Repository**
    - Clone repositori ini ke komputer lokal:
      ```bash
-<<<<<<< HEAD
-     git clone https://github.com/username/rentsport.git
-=======
      git clone https://github.com/Putraa70/rentsport.git
->>>>>>> c434b979f886c871764cfe3fd03ccacce6561a9e
      ```
 
-2. **Masuk ke Direktori Proyek**
+### 2. **Masuk ke Direktori Proyek**
    ```bash
    cd rentsport
-<<<<<<< HEAD
-=======
+   ```
 
----
+
 ## Fitur-fitur dan Penjelasan
 
 ### 1. **Fitur Booking Lapangan**
@@ -113,4 +108,3 @@
 - **PerbaruiStatusLapanganSetelahPembayaran**: Memperbarui status lapangan menjadi "terpesan" setelah pembayaran berhasil.
 
 
->>>>>>> c434b979f886c871764cfe3fd03ccacce6561a9e
