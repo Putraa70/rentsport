@@ -42,9 +42,75 @@
 1. **Clone Repository**
    - Clone repositori ini ke komputer lokal:
      ```bash
+<<<<<<< HEAD
      git clone https://github.com/username/rentsport.git
+=======
+     git clone https://github.com/Putraa70/rentsport.git
+>>>>>>> c434b979f886c871764cfe3fd03ccacce6561a9e
      ```
 
 2. **Masuk ke Direktori Proyek**
    ```bash
    cd rentsport
+<<<<<<< HEAD
+=======
+
+---
+## Fitur-fitur dan Penjelasan
+
+### 1. **Fitur Booking Lapangan**
+   - Pengguna dapat memilih **lapangan** yang tersedia, memeriksa **jadwal kosong**, dan melakukan **pemesanan** dengan pilihan waktu yang diinginkan.
+   - Pemesanan dilakukan melalui **stored procedure** `ReservasiLapangan` yang memastikan integritas data dan transaksi yang konsisten menggunakan **transaction**.
+
+### 2. **Perhitungan Biaya**
+   - Biaya sewa lapangan dihitung melalui **stored function** `HitungTotalBiaya`, yang memanfaatkan harga per jam lapangan dan durasi pemesanan.
+
+### 3. **Konfirmasi Reservasi oleh Admin**
+   - **Admin** dapat mengonfirmasi atau menolak pemesanan dengan mengubah status pemesanan melalui **stored procedure** `ConfirmReservation`.
+
+### 4. **Backup dan Restore Database**
+   - Database secara otomatis dibackup dengan nama file yang berbeda-beda menggunakan **timestamp**. Kamu dapat mengelola dan mengatur backup database secara manual atau menggunakan **script** yang telah disediakan.
+
+---
+
+## Struktur Database
+
+### **Tabel-tabel Utama**
+
+1. **users**
+   - Menyimpan data pengguna (penyewa dan admin).
+   
+2. **fields**
+   - Menyimpan data lapangan olahraga (futsal, badminton, tenis).
+   
+3. **reservations**
+   - Menyimpan data pemesanan lapangan.
+   
+4. **transactions**
+   - Menyimpan data transaksi pembayaran pemesanan.
+   
+5. **reviews**
+   - Menyimpan data review dan rating dari pengguna.
+
+---
+
+### **Stored Procedures**
+
+- **ConfirmReservation**: Digunakan oleh admin untuk mengonfirmasi pemesanan.
+- **ReservasiLapangan**: Digunakan untuk membuat pemesanan lapangan dengan transaksi atomik.
+
+---
+
+### **Stored Functions**
+
+- **HitungTotalBiaya**: Digunakan untuk menghitung biaya sewa lapangan berdasarkan harga per jam dan durasi.
+
+---
+
+### **Triggers**
+
+- **PembatalanOtomatisReservasi**: Secara otomatis membatalkan reservasi yang statusnya "pending" lebih dari 10 menit.
+- **PerbaruiStatusLapanganSetelahPembayaran**: Memperbarui status lapangan menjadi "terpesan" setelah pembayaran berhasil.
+
+
+>>>>>>> c434b979f886c871764cfe3fd03ccacce6561a9e
