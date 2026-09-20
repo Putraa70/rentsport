@@ -96,13 +96,6 @@
 
 ---
 
-### **Stored Functions**
-
-- **HitungTotalBiaya**: Digunakan untuk menghitung biaya sewa lapangan berdasarkan harga per jam dan durasi.
-
----
-
-### **Triggers**
 
 - **PembatalanOtomatisReservasi**: Secara otomatis membatalkan reservasi yang statusnya "pending" lebih dari 10 menit.
 - **PerbaruiStatusLapanganSetelahPembayaran**: Memperbarui status lapangan menjadi "terpesan" setelah pembayaran berhasil.
